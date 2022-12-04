@@ -16,6 +16,7 @@ elon_musk_recent_tweets = pd.read_csv('./elon_musk_recent_tweets/elon_musk_recen
 head = elon_musk_recent_tweets.head()
 print("The head of this data file is: ", head )
 
+#Then we pass each tweet to the AWS Comprehend API for sentiment analysis
 count = 0
 for tweet_text in elon_musk_recent_tweets['text']:
     sentiment_analysis = client.detect_sentiment(Text=tweet_text, LanguageCode='en')
@@ -30,18 +31,5 @@ for tweet_text in elon_musk_recent_tweets['text']:
 
 print(elon_musk_recent_tweets.head())
 elon_musk_recent_tweets.to_csv("elon_musk_recent_2000_tweet_data_with_sentiment_analysis.csv")
-
-
-# #We create a dataframe to store the
-#
-#
-#
-#
-#
-# client = boto3.client('comprehend')
-# text = "Elon Musk is a bad man"
-# detected_sentiment = client.detect_sentiment(Text = text, LanguageCode = 'en')
-#
-# print("Detected Sentiment output type {} text {}", type(detected_sentiment), detected_sentiment)
 
 

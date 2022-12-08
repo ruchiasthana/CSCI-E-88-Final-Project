@@ -11,7 +11,7 @@ import pandas as pd
 client = boto3.client('comprehend')
 
 #We start by reading in a CSV file of elon_musks most recent tweets
-elon_musk_recent_tweets = pd.read_csv('./elon_musk_recent_tweets/elon_musk_recent_2000_tweet_data.csv')
+elon_musk_recent_tweets = pd.read_csv('./elon_musk_recent_tweets/elon_musk_recent_20000_tweet_data.csv')
 
 #Initialize fields that we will want to populate with our analysis
 rows, cols = elon_musk_recent_tweets.shape
@@ -35,6 +35,6 @@ for row_idx in range(rows):
     count += 1
 
 print(elon_musk_recent_tweets)
-elon_musk_recent_tweets.to_csv("elon_musk_recent_2000_tweet_data_with_sentiment_analysis.csv")
+elon_musk_recent_tweets.to_csv("elon_musk_recent_20000_tweet_data_with_sentiment_analysis.csv")
 
 

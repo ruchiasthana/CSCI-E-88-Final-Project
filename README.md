@@ -54,4 +54,5 @@ We used Github for code sharing, version control, and collaboration.
 
 ## Conclusions
 
-We were able to isolate 2000 tweets related to #elonmusk between the hours of 10.22 am and 11.55 am eastern timezone. Of these tweets, only about 10% were labeled by our sentiment analyzer as either NEGATIVE, POSITIVE or MIXED - with the remaining tweets having a NEUTRAL sentiment. Overall for this snapshot in time, we observed that the sentiment towards Elon Musk was quite balanced. These results contradict our hypothesis that the overall sentiment of tweets will be generally negative, as there is still a lot of frustration associated with the recent Twitter layoffs. 		
+We were able to isolate 2000 tweets related to #elonmusk between the hours of 10.22 am and 11.55 am eastern timezone. Of these tweets, only about 10% were labeled by our sentiment analyzer as either NEGATIVE, POSITIVE or MIXED - with the remaining tweets having a NEUTRAL sentiment. Overall for this snapshot in time, we observed that the sentiment towards Elon Musk was quite balanced. 
+**These results contradict our hypothesis that the overall sentiment of tweets will be generally negative, as there is still a lot of frustration associated with the recent Twitter layoffs.** 		

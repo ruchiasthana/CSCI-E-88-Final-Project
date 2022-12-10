@@ -6,16 +6,7 @@ import boto3
 import tweepy
 import pandas as pd
 
-
-"""
-Below is basic credentials for accessing the Twitter API: 
-
-API Key: F58ZzwAG8D2y582kHGwiTEXqi
-API Key Secret: o5n0ASypriKMmWSdOrvkeU25dfKLTrBIw789jK7LQTEdIMkCkf
-Bearer Token: AAAAAAAAAAAAAAAAAAAAAPh8jwEAAAAA5FLMueSNftI3RHF0rZPXSKdo0dc%3DEyX313BYU98GdqPWNG3grnxhhX2AkjGE2N8efR1RXZYT1H4WZq
-"""
-
-bearer_token = "AAAAAAAAAAAAAAAAAAAAAPh8jwEAAAAA5FLMueSNftI3RHF0rZPXSKdo0dc%3DEyX313BYU98GdqPWNG3grnxhhX2AkjGE2N8efR1RXZYT1H4WZq"
+bearer_token = "XXXXXX"
 client = tweepy.Client(bearer_token)
 s3 = boto3.resource('s3')
 

@@ -20,7 +20,7 @@ https://youtu.be/CdzAkxTHQlo
 
 ### Architecture diagram 
 
-ADD
+![My Image](architecture_diagram.png)
 
 ### Data Source 
 We used the GET /2/tweets/search/recent API to pull up to 20,000 Tweets about #elonmusk. We leveraged this API because it was one of a limited number of APIs available for standard OAuth credentials. We also chose this dataset because the data from this API will tell us if the majority of recent Tweets have a POSITIVE or NEGATIVE sentiment. 
@@ -49,6 +49,8 @@ We leveraged the Elasticsearch cloud for a portion of our data analysis to proce
 
 We chose Kibana for our data visualization capabilities of its seamless integration with Elasticsearch. Within Kibana, we focused primarily on visualizations for categorical variables, including pie charts and bar graphs over a period of time.
 We used Github for code sharing, version control, and collaboration.
+
+![My Image](kibana_diagrams.png)
 
 ## Conclusions
 

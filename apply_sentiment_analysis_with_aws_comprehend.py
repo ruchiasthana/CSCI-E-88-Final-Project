@@ -60,7 +60,9 @@ elon_musk_recent_tweets.to_csv(elon_musk_recent_with_sentiment_analysis)
 s3_client = boto3.client('s3')
 elon_musk_recent_tweets_with_sentiment_bucket = 'elon-musk-recent-tweets-with-sentiment-bucket-1'
 s3_client.create_bucket(Bucket=elon_musk_recent_tweets_with_sentiment_bucket)
-boto3.client('s3').upload_file(elon_musk_recent_with_sentiment_analysis, elon_musk_recent_tweets_with_sentiment_bucket, 'elon_musk_recent_2000_tweet_data_with_sentiment_analysis.csv')
+boto3.client('s3').upload_file(elon_musk_recent_with_sentiment_analysis,
+                               elon_musk_recent_tweets_with_sentiment_bucket,
+                               'elon_musk_recent_2000_tweet_data_with_sentiment_analysis.csv')
 
 
 

@@ -1,0 +1,19 @@
+from kafka import KafkaConsumer
+import boto3
+import json
+
+with open('config.json') as json_file:
+    data = json.load(json_file)
+
+client= boto3.resource("s3",aws_access_key_id=data['AWS_ACCESS_KEY_ID'], aws_secret_access_key= data['AWS_SECRET_ACCESS_KEY'])
+
+consumer = KafkaConsumer('finalproject', bootstrap_servers=['localhost:9092'])
+
+s3_file_name = "s3://elon-musk-recent-tweets/TwitterData/Tweet.csv"
+
+
+for message in consumer:
+    values = message.value.decode('utf-8')
+    with open(s3_file_name, 'w') as f:
+        print(message.value)
+        f.write(f"{values}\n")
